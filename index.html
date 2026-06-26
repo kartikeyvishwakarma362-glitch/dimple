@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A cinematic Happy Birthday luxury memory book for Dimple">
+  <title>Happy Birthday Dimple 🎂💖</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Floating particles layer -->
+  <div class="particles" id="particles" aria-hidden="true"></div>
+  <div class="confetti-layer" id="confetti" aria-hidden="true"></div>
+
+  <!-- Music toggle -->
+  <button class="music-toggle glass-panel" id="musicToggle" aria-label="Toggle background music">
+    <span class="music-icon music-icon--play" id="musicIconPlay">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+    </span>
+    <span class="music-icon music-icon--pause hidden" id="musicIconPause">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+    </span>
+    <span class="music-label">Music</span>
+  </button>
+  <audio id="bgMusic" loop preload="auto">
+    <source src="https://cdn.pixabay.com/download/audio/2022/03/24/audio_c8c8ff762a.mp3?filename=soft-piano-ambient-112191.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Hero Section -->
+  <header class="hero" id="hero">
+    <div class="hero__bokeh" aria-hidden="true">
+      <span class="bokeh bokeh--1"></span>
+      <span class="bokeh bokeh--2"></span>
+      <span class="bokeh bokeh--3"></span>
+      <span class="bokeh bokeh--4"></span>
+      <span class="bokeh bokeh--5"></span>
+    </div>
+    <div class="hero__hearts" id="heroHearts" aria-hidden="true"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow reveal">For the one who lights up every room</p>
+      <h1 class="hero__title reveal">Happy Birthday Dimple 🎂💖</h1>
+      <p class="hero__subtitle reveal">A beautiful soul deserves a beautiful celebration</p>
+      <a href="#love-notes" class="hero__cta glass-panel reveal">Open Your Love Book</a>
+    </div>
+    <div class="hero__scroll-hint" aria-hidden="true">
+      <span class="scroll-line"></span>
+    </div>
+  </header>
+
+  <main>
+    <!-- Love Notes Section -->
+    <section class="section love-notes" id="love-notes">
+      <div class="section__header reveal">
+        <span class="section__tag">💌 Love Notes</span>
+        <h2 class="section__title">Words From the Heart</h2>
+        <p class="section__desc">Every line written with love, just for you.</p>
+      </div>
+      <div class="love-notes__grid">
+        <article class="note-card glass-panel reveal">
+          <div class="note-card__glow"></div>
+          <span class="note-card__icon">🌸</span>
+          <h3 class="note-card__heading">To My Dimple</h3>
+          <p class="note-card__text">On this special day, I want you to know how deeply you are loved. Your smile has the power to turn ordinary moments into magic, and your heart makes every day feel like a celebration.</p>
+        </article>
+        <article class="note-card glass-panel reveal">
+          <div class="note-card__glow"></div>
+          <span class="note-card__icon">✨</span>
+          <h3 class="note-card__heading">You Are Extraordinary</h3>
+          <p class="note-card__text">Dimple, you carry grace in everything you do — from the way you laugh to the way you care. Today we celebrate not just your birthday, but the beautiful person you are and all the joy you bring into this world.</p>
+        </article>
+        <article class="note-card glass-panel reveal">
+          <div class="note-card__glow"></div>
+          <span class="note-card__icon">💖</span>
+          <h3 class="note-card__heading">Forever & Always</h3>
+          <p class="note-card__text">Every memory with you feels like a scene from the most beautiful love story. Thank you for being my favorite person, my calm in the chaos, and the reason my heart feels so full. Happy Birthday, my love.</p>
+        </article>
+        <article class="note-card glass-panel reveal">
+          <div class="note-card__glow"></div>
+          <span class="note-card__icon">🎂</span>
+          <h3 class="note-card__heading">A Wish For You</h3>
+          <p class="note-card__text">May this year bring you endless laughter, dreams that come true, and moments so beautiful they take your breath away. You deserve every happiness — today and always. With all my love, forever yours.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section class="section gallery" id="gallery">
+      <div class="section__header reveal">
+        <span class="section__tag">📸 Our Memories</span>
+        <h2 class="section__title">Moments That Made Us</h2>
+        <p class="section__desc">Tap any memory to relive the magic.</p>
+      </div>
+      <div class="gallery__grid" id="galleryGrid">
+        <button class="memory-card reveal" data-index="0" aria-label="Open memory: A Divine Celebration">
+          <div class="memory-card__frame">
+            <img src="assets/IMG_3530-b16c0a28-2092-473b-b1f3-0624d1d90dec.png" alt="Traditional celebration with family" loading="lazy">
+            <div class="memory-card__overlay">
+              <span class="memory-card__zoom">✦</span>
+            </div>
+          </div>
+          <figcaption class="memory-card__caption">A Divine Celebration 🌸✨</figcaption>
+        </button>
+        <button class="memory-card reveal" data-index="1" aria-label="Open memory: Our Beautiful Memory">
+          <div class="memory-card__frame">
+            <img src="assets/IMG_3531-55bb6a98-76a0-4cbd-b133-30c0270af698.png" alt="Couple selfie at a cafe" loading="lazy">
+            <div class="memory-card__overlay">
+              <span class="memory-card__zoom">✦</span>
+            </div>
+          </div>
+          <figcaption class="memory-card__caption">Our Beautiful Memory 💖</figcaption>
+        </button>
+        <button class="memory-card memory-card--tall reveal" data-index="2" aria-label="Open memory: Forever Moment">
+          <div class="memory-card__frame">
+            <img src="assets/IMG_3541-34250dac-2cac-4595-a8da-b98a8ecf774c.png" alt="Couple walking hand in hand in the park" loading="lazy">
+            <div class="memory-card__overlay">
+              <span class="memory-card__zoom">✦</span>
+            </div>
+          </div>
+          <figcaption class="memory-card__caption">Forever Moment 💕</figcaption>
+        </button>
+        <button class="memory-card memory-card--tall reveal" data-index="3" aria-label="Open memory: Special Day">
+          <div class="memory-card__frame">
+            <img src="assets/IMG_3542-9c9feb8d-b786-49eb-bb9b-ee6ed11c051d.png" alt="Couple at a restaurant table" loading="lazy">
+            <div class="memory-card__overlay">
+              <span class="memory-card__zoom">✦</span>
+            </div>
+          </div>
+          <figcaption class="memory-card__caption">Special Day ✨</figcaption>
+        </button>
+        <button class="memory-card reveal" data-index="4" aria-label="Open memory: The Way You Make Me Smile">
+          <div class="memory-card__frame">
+            <img src="assets/IMG_3537-b89fb196-3cc0-4a33-8dc6-ef99c44568bf.png" alt="Couple at The Gentry Roasters cafe" loading="lazy">
+            <div class="memory-card__overlay">
+              <span class="memory-card__zoom">✦</span>
+            </div>
+          </div>
+          <figcaption class="memory-card__caption">The Way You Make Me Smile 💕</figcaption>
+        </button>
+      </div>
+    </section>
+
+    <!-- Closing Section -->
+    <section class="section closing reveal" id="closing">
+      <div class="closing__inner glass-panel">
+        <span class="closing__heart">💝</span>
+        <h2 class="closing__title">Happy Birthday, Dimple</h2>
+        <p class="closing__text">You are loved beyond measure. Today, tomorrow, and always.</p>
+        <p class="closing__signature">With all my heart ♾️</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+    <div class="lightbox__backdrop" id="lightboxBackdrop"></div>
+    <button class="lightbox__close" id="lightboxClose" aria-label="Close photo viewer">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+        <path d="M18 6L6 18M6 6l12 12"/>
+      </svg>
+    </button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Previous photo">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+        <path d="M15 18l-6-6 6-6"/>
+      </svg>
+    </button>
+    <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Next photo">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+        <path d="M9 18l6-6-6-6"/>
+      </svg>
+    </button>
+    <div class="lightbox__content" id="lightboxContent">
+      <img class="lightbox__image" id="lightboxImage" src="" alt="">
+      <p class="lightbox__caption" id="lightboxCaption"></p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>Made with love for Dimple · Forever & Always 💖</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
